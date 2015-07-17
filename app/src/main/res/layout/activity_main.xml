@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Median"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:id="@+id/instructionsButton"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/galleryButton"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/cameraButton"
+        android:layout_alignRight="@+id/cameraButton"
+        android:layout_alignEnd="@+id/cameraButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settingsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/cameraButton"
+        android:layout_below="@+id/instructionsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+</RelativeLayout>
